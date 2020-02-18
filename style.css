@@ -78,6 +78,7 @@ html {
     grid-template-rows: 1fr;
 }
 .otherButton > button {
+    background-color: rgb(158, 158, 158);
     justify-self: center;
     margin: 5px;
 }
