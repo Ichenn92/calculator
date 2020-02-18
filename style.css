@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+* {
+    font-family: 'Righteous', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    background-color: rgb(41, 41, 41);
+}
+
+.screen {
+    height: 100px;
+    max-width: 400px;
+    text-align: right;
+    margin: 20px auto 0 auto;
+    padding-right: 20px;
+}
+.screen > div {
+    color: rgb(239, 247, 252);
+    font-size: 40px;
+}
+#historic {
+    font-size: 30px;
+    color: rgb(100, 100, 100);
+}
+
+.buttonPanel {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 400px;
+    margin: 0 auto;
+    grid-template-rows: 90px 90px;
+    /* No Selection */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.numbers {
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+    display: grid;
+    justify-self: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.numbers > button {
+    justify-self: center;
+    margin: 5px;
+}
+.numbers > #zero {
+    justify-self: center;
+    width: 90%;
+    border-radius: 300px;
+    grid-column: 1 / span 2;
+}
+.operator {
+    grid-area: 1 / col2-start / last-line / col2-end;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+.operator > button {
+    justify-self: center;
+    margin: 5px;
+}
+.otherButton {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+.otherButton > button {
+    justify-self: center;
+    margin: 5px;
+}
+button {
+    font-size: 30px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-style: none;
+    transition: .3s;
+    cursor: pointer;
+    -moz-box-shadow:    inset 0 0 2px #000000;
+    -webkit-box-shadow: inset 0 0 2px #000000;
+    box-shadow:         inset 0 0 2px #000000;
+}
+
+.key {
+    background-color: rgb(83, 83, 83);
+    color: rgb(239, 247, 252);
+}
+.operator > button {
+    background-color: rgb(146, 106, 32);
+    color: rgb(239, 247, 252);
+}
+
+button:hover {
+    opacity: .8;
+}
+button:active {
+    opacity: .5;
+    background-color:white;
+}
