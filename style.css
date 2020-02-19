@@ -9,6 +9,7 @@
 
 html {
     background-color: rgb(41, 41, 41);
+    touch-action: manipulation;
 }
 
 .screen {
