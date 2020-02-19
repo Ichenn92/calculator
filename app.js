@@ -66,7 +66,7 @@ function displayResult() {
 }
 //--------------------------------------------------
 function displayTyping(text) {
-    typingScreen_div.innerHTML = text.substr(-TYPING_CHARSIZE);
+    typingScreen_div.innerHTML = String(text).substr(-TYPING_CHARSIZE);
 }
 //--------------------------------------------------
 function displayHistoric() {
